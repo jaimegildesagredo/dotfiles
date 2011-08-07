@@ -1,0 +1,12 @@
+[user]
+    name = Jaime Gil de Sagredo Luna
+    email = jaimegildesagredo@gmail.com
+[alias]
+    ci = commit
+    st = status
+    di = diff
+[core]
+    editor = vim
+[color]
+    ui = always
+
