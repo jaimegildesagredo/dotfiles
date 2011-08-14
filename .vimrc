@@ -35,4 +35,6 @@ let g:SuperTabDefaultCompletitionType="context"
 
 " NERDTRee plugin configuration.
 map <leader>n :NERDTreeToggle<CR>
+let NERDTreeIgnore = ["\~$"]
+
 
