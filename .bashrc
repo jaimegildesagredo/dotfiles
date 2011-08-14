@@ -7,5 +7,6 @@ fi
 
 # User specific aliases and functions
 alias ll="ls -l"
+alias la="ls -a"
 alias vi="gvim"
 
