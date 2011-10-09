@@ -1,7 +1,3 @@
-" Pathogen configuration.
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
-
 " Syntax coloring and filetype detection.
 syntax on
 filetype plugin on
