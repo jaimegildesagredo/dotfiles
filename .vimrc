@@ -1,6 +1,14 @@
+set nocompatible
+filetype off
+
+" Vundle configuration.
+set rtp+=~/.vim/bundle/vundle
+call vundle#rc()
+
+Bundle "gmarik/vundle"
+
 " Syntax coloring and filetype detection.
 syntax on
-filetype plugin on
 
 " List configuratio List configurationn
 set listchars=tab:▸\ ,eol:¬
@@ -8,7 +16,6 @@ set list
 
 "
 set encoding=utf-8
-set nocompatible
 set title
 set ruler
 set visualbell
