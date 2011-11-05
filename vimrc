@@ -38,3 +38,8 @@ map <C-n> :NERDTreeToggle<CR>
 " Gundo plugin configuration.
 map <C-g> :GundoToggle<CR>
 
+
+" Copy & Paste stuff.
+map <C-c> "+y<CR>
+map <C-v> "+p<CR>
+map <C-x> "+c<CR>
