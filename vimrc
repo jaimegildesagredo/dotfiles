@@ -6,6 +6,7 @@ set rtp+=~/.vim/bundle/vundle
 call vundle#rc()
 
 Bundle "gmarik/vundle"
+Bundle "The-NERD-tree"
 
 " Syntax coloring and filetype detection.
 syntax on
@@ -38,6 +39,6 @@ let g:SuperTabDefaultCompletitionType="context"
 
 " NERDTRee plugin configuration.
 map <leader>n :NERDTreeToggle<CR>
-let NERDTreeIgnore = ["\~$"]
+"let NERDTreeIgnore = ["\~$"]
 
 
