@@ -7,23 +7,20 @@ call vundle#rc()
 
 Bundle "gmarik/vundle"
 Bundle "The-NERD-tree"
+Bundle "fholgado/minibufexpl.vim"
+Bundle "Gundo"
 
 " Syntax coloring and filetype detection.
 syntax on
 
-" List configuratio List configurationn
-set listchars=tab:▸\ ,eol:¬
-set list
-
-"
 set encoding=utf-8
 set title
 set ruler
 set visualbell
+set cursorline
 set number
-
-" Personal mapleader.
-let mapleader=","
+set listchars=tab:▸\ ,eol:¬
+set list
 
 " Color scheme
 colorscheme desert
@@ -34,11 +31,10 @@ let g:miniBufExplMapWindowNavArrows=1
 let g:miniBufExplMapCTabSwitchBufs=1
 let g:miniBufExplModSelTarget=1
 
-" SuperTab plugin configuration.
-let g:SuperTabDefaultCompletitionType="context"
-
 " NERDTRee plugin configuration.
-map <leader>n :NERDTreeToggle<CR>
-"let NERDTreeIgnore = ["\~$"]
+map <C-n> :NERDTreeToggle<CR>
+"let NERDTreeIgnore = ["\~$", "\.pyc$", "\.orig$"]
 
+" Gundo plugin configuration.
+map <C-g> :GundoToggle<CR>
 
