@@ -31,7 +31,7 @@ function mkvirtualenv() {
 
 function lsvirtualenvs() {
     for virtualenv in `ls "$WORKON_HOME"`; do
-        if [[ -d "$WORKON_HOME/$virtualenv" ]]; then
+        if [[ -f ${WORKON_HOME}/${virtualenv}/bin/activate ]]; then
             echo $virtualenv
         fi
     done
