@@ -4,18 +4,28 @@ VIRTUALENV=`which virtualenv`
 VIRTUALENVOPTS="--clear --no-site-packages"
 
 function workon() {
-    VIRTUALENV_NAME=${1:-`basename $PWD`}
-    VIRTUALENV_HOME=$WORKON_HOME/$VIRTUALENV_NAME
-
-    if [[ ! -d $VIRTUALENV_HOME ]]; then
-        mkvirtualenv $VIRTUALENV_NAME
+    if [[ $# != 1 ]]; then
+       echo "Usage: workon virtualenv_name" >&2
+       return 1
     fi
 
-    source $VIRTUALENV_HOME/bin/activate
+    VIRTUALENV_HOME=${WORKON_HOME}/${1}
+    VIRTUALENV_ACTIVATE=${VIRTUALENV_HOME}/bin/activate
+
+    if ! [[ -d ${VIRTUALENV_HOME} && -f ${VIRTUALENV_ACTIVATE} ]]; then
+        echo "Error: Environment '${1}' is not a valid virtualenv." >&2
+        return 1
+    fi
+
+    source ${VIRTUALENV_ACTIVATE}
 }
 
 function mkvirtualenv() {
-    VIRTUALENV_NAME=${1:-`basename $PWD`}
+    if [[ $# != 1 ]]; then
+       echo "Usage: mkvirtualenv virtualenv_name" >&2
+       return 1
+    fi
+
     $VIRTUALENV $VIRTUALENVOPTS $WORKON_HOME/$VIRTUALENV_NAME
 }
 
@@ -26,4 +36,15 @@ function lsvirtualenvs() {
         fi
     done
 }
+
+function _virtualenvs() {
+    COMPREPLY=($(compgen -W "`lsvirtualenvs`" -- "${COMP_WORDS[COMP_CWORD]}"))
+}
+
+function _default_virtualenv() {
+    COMPREPLY=($(compgen -W "`basename $PWD`"))
+}
+
+complete -o nospace -F _virtualenvs workon
+complete -o nospace -F _default_virtualenv mkvirtualenv
 
