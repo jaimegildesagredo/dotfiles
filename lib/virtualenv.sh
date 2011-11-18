@@ -26,7 +26,7 @@ function mkvirtualenv() {
        return 1
     fi
 
-    $VIRTUALENV $VIRTUALENVOPTS $WORKON_HOME/$VIRTUALENV_NAME
+    ${VIRTUALENV} ${VIRTUALENVOPTS} ${WORKON_HOME}/${1}
 }
 
 function lsvirtualenvs() {
