@@ -9,6 +9,7 @@ Bundle "gmarik/vundle"
 Bundle "The-NERD-tree"
 Bundle "fholgado/minibufexpl.vim"
 Bundle "Gundo"
+Bundle "rstacruz/sparkup", {"rtp": "vim/"}
 
 " Syntax coloring and filetype detection.
 syntax on
