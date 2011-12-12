@@ -23,6 +23,12 @@ set number
 set listchars=tab:▸\ ,eol:¬
 set list
 
+" Searching
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+
 " Color scheme
 colorscheme desert
 
