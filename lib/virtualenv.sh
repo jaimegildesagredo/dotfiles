@@ -44,17 +44,18 @@ function lsvirtualenvs() {
 }
 
 function rmvirtualenv() {
-    if [[ $# != 1 ]]; then
-       echo "Usage: rmvirtualenv virtualenv_name" >&2
+    if [[ $# -lt 1 ]]; then
+       echo "Usage: rmvirtualenv virtualenv_name [virtualenv_name [...]]" >&2
        return 1
     fi
 
-    if ! _is_virtualenv ${1}; then
-        echo "Error: Environment '${1}' is not a valid virtualenv." >&2
-        return 1
-    fi
+    for env_name in "${@}"; do
+        if ! _is_virtualenv ${env_name}; then
+            echo "Error: Environment '${env_name}' is not a valid virtualenv." >&2
+        fi
 
-    rm -Rf ${WORKON_HOME}/${1}
+        rm -Rf ${WORKON_HOME}/${env_name}
+    done
 }
 
 function _virtualenvs() {
@@ -66,6 +67,6 @@ function _default_virtualenv() {
 }
 
 complete -o nospace -F _virtualenvs workon
-complete -o nospace -F _virtualenvs rmvirtualenv
 complete -o nospace -F _default_virtualenv mkvirtualenv
+complete -F _virtualenvs rmvirtualenv
 
