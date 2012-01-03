@@ -32,6 +32,7 @@ function mkvirtualenv() {
     fi
 
     ${VIRTUALENV} ${VIRTUALENVOPTS} ${WORKON_HOME}/${1}
+    workon ${1}
 }
 
 function lsvirtualenvs() {
