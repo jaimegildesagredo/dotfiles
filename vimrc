@@ -29,6 +29,15 @@ set incsearch
 set ignorecase
 set smartcase
 
+" Indentation
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set textwidth=79
+set smarttab
+set expandtab
+set autoindent
+
 " Color scheme
 colorscheme desert
 
