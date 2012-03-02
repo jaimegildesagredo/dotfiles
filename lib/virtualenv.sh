@@ -1,7 +1,7 @@
 #!/bin/bash
 
 VIRTUALENV=`which virtualenv`
-VIRTUALENVOPTS="--clear --no-site-packages"
+VIRTUALENVOPTS="--clear"
 
 function _is_virtualenv() {
     lsvirtualenvs | grep -q -x ${1}
