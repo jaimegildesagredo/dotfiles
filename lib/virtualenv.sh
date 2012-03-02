@@ -1,7 +1,6 @@
 #!/bin/bash
 
 VIRTUALENV=`which virtualenv`
-VIRTUALENVOPTS="--clear --no-site-packages"
 
 function _is_virtualenv() {
     lsvirtualenvs | grep -q -x ${1}
@@ -26,13 +25,15 @@ function workon() {
 }
 
 function mkvirtualenv() {
-    if [[ $# != 1 ]]; then
-       echo "Usage: mkvirtualenv virtualenv_name" >&2
+    if [[ $# == 0 ]]; then
+       echo "Usage: mkvirtualenv [VIRTUALENV_OPTIONS] virtualenv_name" >&2
        return 1
     fi
 
-    ${VIRTUALENV} ${VIRTUALENVOPTS} ${WORKON_HOME}/${1}
-    workon ${1}
+    VIRTUALENV_NAME="${@: -1}"
+
+    ${VIRTUALENV} --clear ${@:1:$#-1} ${WORKON_HOME}/${VIRTUALENV_NAME}
+    workon ${VIRTUALENV_NAME}
 }
 
 function lsvirtualenvs() {
