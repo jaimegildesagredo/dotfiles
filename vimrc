@@ -48,7 +48,7 @@ let g:miniBufExplModSelTarget=1
 
 " NERDTRee plugin configuration.
 map <C-n> :NERDTreeToggle<CR>
-"let NERDTreeIgnore = ["\~$", "\.pyc$", "\.orig$"]
+let NERDTreeIgnore = ['\~$', '\.pyc$', '\.orig$']
 
 " Gundo plugin configuration.
 map <C-g> :GundoToggle<CR>
