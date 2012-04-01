@@ -3,7 +3,7 @@
 VIMDIR=$HOME/.vim
 
 function install_symlink() {
-    echo "Installing $1 in $2..."
+    echo "Installing `basename $1` in $2..."
     ln -sf $1 $2
 }
 
