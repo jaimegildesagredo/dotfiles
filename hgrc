@@ -2,3 +2,5 @@
 username = Jaime Gil de Sagredo Luna <jaimegildesagredo@gmail.com>
 editor = vim
 
+[extensions]
+color =

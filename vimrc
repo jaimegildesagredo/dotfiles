@@ -7,12 +7,13 @@ call vundle#rc()
 
 Bundle "gmarik/vundle"
 Bundle "The-NERD-tree"
-Bundle "fholgado/minibufexpl.vim"
+Bundle "minibufexpl.vim"
 Bundle "Gundo"
-Bundle "rstacruz/sparkup", {"rtp": "vim/"}
+Bundle "snipMate"
 
 " Syntax coloring and filetype detection.
 syntax on
+filetype plugin indent on
 
 set encoding=utf-8
 set title
