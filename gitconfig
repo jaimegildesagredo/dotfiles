@@ -8,5 +8,4 @@
 [core]
     editor = vim
 [color]
-    ui = always
-
+    ui = auto
