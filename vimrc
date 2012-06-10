@@ -11,6 +11,7 @@ Bundle "minibufexpl.vim"
 Bundle "Gundo"
 Bundle "snipMate"
 Bundle "rstacruz/sparkup", {"rtp": "vim/"}
+Bundle "altercation/vim-colors-solarized"
 
 " Syntax coloring and filetype detection.
 syntax on
@@ -40,7 +41,8 @@ set expandtab
 set autoindent
 
 " Color scheme
-colorscheme desert
+set background=dark
+colorscheme solarized
 
 " MiniBufExplorer plugin configuration.
 let g:miniBufExplMapWindowNavVim=1
