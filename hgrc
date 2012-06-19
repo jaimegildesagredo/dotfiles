@@ -4,3 +4,7 @@ editor = vim
 
 [extensions]
 color =
+pager =
+
+[pager]
+pager = LESS='FSRX' less
