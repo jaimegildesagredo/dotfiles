@@ -29,7 +29,7 @@ function install_vim_ftplugins() {
     ftplugin_dir=$VIMDIR/ftplugin
     install_directory $ftplugin_dir
 
-    ftplugins=(css.vim html.vim javascript.vim python.vim)
+    ftplugins=(css.vim html.vim javascript.vim python.vim ruby.vim)
     for ftplugin in ${ftplugins[@]}; do
         install_symlink $PWD/vim/ftplugin/$ftplugin $ftplugin_dir/$ftplugin
     done
