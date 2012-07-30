@@ -13,6 +13,10 @@ Bundle "snipMate"
 Bundle "rstacruz/sparkup", {"rtp": "vim/"}
 Bundle "altercation/vim-colors-solarized"
 
+Bundle 'scrooloose/syntastic'
+let g:syntastic_check_on_open=1
+let g:syntastic_enable_signs=0
+
 " Syntax coloring and filetype detection.
 syntax on
 filetype plugin indent on
