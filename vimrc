@@ -9,13 +9,15 @@ Bundle "gmarik/vundle"
 Bundle "The-NERD-tree"
 Bundle "minibufexpl.vim"
 Bundle "Gundo"
-Bundle "snipMate"
 Bundle "rstacruz/sparkup", {"rtp": "vim/"}
 Bundle "altercation/vim-colors-solarized"
 
 Bundle 'scrooloose/syntastic'
 let g:syntastic_check_on_open=1
 let g:syntastic_enable_signs=0
+
+Bundle "Shougo/neocomplcache"
+let g:neocomplcache_enable_at_startup = 1
 
 " Syntax coloring and filetype detection.
 syntax on
