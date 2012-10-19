@@ -31,6 +31,9 @@ let g:syntastic_enable_signs=0
 Bundle "Shougo/neocomplcache"
 let g:neocomplcache_enable_at_startup = 1
 
+Bundle 'Lokaltog/vim-powerline'
+set laststatus=2
+
 " Syntax coloring and filetype detection.
 syntax on
 filetype plugin indent on
