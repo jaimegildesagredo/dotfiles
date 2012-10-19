@@ -7,10 +7,22 @@ call vundle#rc()
 
 Bundle "gmarik/vundle"
 Bundle "The-NERD-tree"
+map <C-n> :NERDTreeToggle<CR>
+let NERDTreeIgnore = ['\~$', '\.pyc$', '\.orig$']
+
 Bundle "minibufexpl.vim"
+let g:miniBufExplMapWindowNavVim=1
+let g:miniBufExplMapWindowNavArrows=1
+let g:miniBufExplMapCTabSwitchBufs=1
+let g:miniBufExplModSelTarget=1
+
 Bundle "Gundo"
+map <C-g> :GundoToggle<CR>
+
 Bundle "rstacruz/sparkup", {"rtp": "vim/"}
 Bundle "altercation/vim-colors-solarized"
+set background=dark
+colorscheme solarized
 
 Bundle 'scrooloose/syntastic'
 let g:syntastic_check_on_open=1
@@ -45,24 +57,6 @@ set shiftwidth=4
 set smarttab
 set expandtab
 set autoindent
-
-" Color scheme
-set background=dark
-colorscheme solarized
-
-" MiniBufExplorer plugin configuration.
-let g:miniBufExplMapWindowNavVim=1
-let g:miniBufExplMapWindowNavArrows=1
-let g:miniBufExplMapCTabSwitchBufs=1
-let g:miniBufExplModSelTarget=1
-
-" NERDTRee plugin configuration.
-map <C-n> :NERDTreeToggle<CR>
-let NERDTreeIgnore = ['\~$', '\.pyc$', '\.orig$']
-
-" Gundo plugin configuration.
-map <C-g> :GundoToggle<CR>
-
 
 " Copy & Paste stuff.
 map <C-c> "+y<CR>
