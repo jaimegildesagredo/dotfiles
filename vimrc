@@ -34,6 +34,8 @@ let g:neocomplcache_enable_at_startup = 1
 Bundle 'Lokaltog/vim-powerline'
 set laststatus=2
 
+Bundle 'tpope/vim-fugitive'
+
 " Syntax coloring and filetype detection.
 syntax on
 filetype plugin indent on
