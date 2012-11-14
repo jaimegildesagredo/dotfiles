@@ -36,6 +36,8 @@ set laststatus=2
 
 Bundle 'tpope/vim-fugitive'
 
+Bundle 'kchmck/vim-coffee-script'
+
 " Syntax coloring and filetype detection.
 syntax on
 filetype plugin indent on
