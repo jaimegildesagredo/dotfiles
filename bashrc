@@ -11,7 +11,7 @@ alias la="ls -a"
 alias vi="gvim"
 
 # Virtualenv stuff.
-WORKON_HOME=$HOME/Projects/envs
+WORKON_HOME=$HOME/.virtualenvs
 export WORKON_HOME
 
 source $HOME/lib/virtualenv.sh
