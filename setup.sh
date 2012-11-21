@@ -49,28 +49,22 @@ function install_vim_vundle() {
     vim -c "BundleInstall!" -c ":qa!"
 }
 
-function install_libraries() {
-    libraries_dir=$HOME/lib
-    install_directory $libraries_dir
-
-    libraries=(virtualenv.sh)
-    for library in ${libraries[@]}; do
-        install_symlink $PWD/lib/$library $libraries_dir/$library
-    done
-}
-
 function update_repo() {
     git pull
 }
 
+function install_virtualenvwrapper() {
+    pip install --user virtualenvwrapper
+}
+
 function main() {
     update_repo
-    install_dotfiles
-    install_libraries
 
+    install_dotfiles
     install_vimdir
     install_vim_ftplugins
     install_vim_vundle
+    install_virtualenvwrapper
 }
 
 main

@@ -14,5 +14,4 @@ alias vi="gvim"
 WORKON_HOME=$HOME/.virtualenvs
 export WORKON_HOME
 
-source $HOME/lib/virtualenv.sh
-
+source $HOME/.local/bin/virtualenvwrapper.sh
