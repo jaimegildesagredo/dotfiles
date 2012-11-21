@@ -59,10 +59,18 @@ function install_libraries() {
     done
 }
 
-install_dotfiles
-install_libraries
+function update_repo() {
+    git pull
+}
 
-install_vimdir
-install_vim_ftplugins
-install_vim_vundle
+function main() {
+    update_repo
+    install_dotfiles
+    install_libraries
 
+    install_vimdir
+    install_vim_ftplugins
+    install_vim_vundle
+}
+
+main
