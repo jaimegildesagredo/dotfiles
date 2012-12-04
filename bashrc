@@ -9,6 +9,7 @@ fi
 alias ll="ls -l"
 alias la="ls -a"
 alias vi="gvim"
+alias gti="git"
 
 # Virtualenv stuff.
 WORKON_HOME=$HOME/.virtualenvs
