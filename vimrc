@@ -1,4 +1,5 @@
 set nocompatible
+let mapleader = ","
 filetype off
 
 " Vundle configuration.
