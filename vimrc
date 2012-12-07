@@ -10,6 +10,8 @@ Bundle "The-NERD-tree"
 map <C-n> :NERDTreeToggle<CR>
 let NERDTreeIgnore = ['\~$', '\.pyc$', '\.orig$']
 
+Bundle "scrooloose/nerdcommenter"
+
 Bundle "minibufexpl.vim"
 let g:miniBufExplMapWindowNavVim=1
 let g:miniBufExplMapWindowNavArrows=1
