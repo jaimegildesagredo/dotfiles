@@ -4,8 +4,11 @@ editor = vim
 
 [extensions]
 color =
+purge =
+rebase =
 pager =
 purge =
+mq =
 
 [pager]
 pager = LESS='FSRX' less
