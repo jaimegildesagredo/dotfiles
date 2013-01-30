@@ -10,7 +10,7 @@ call vundle#rc()
 
 Bundle "gmarik/vundle"
 Bundle "The-NERD-tree"
-map <C-n> :NERDTreeToggle<CR>
+map <leader>n :NERDTreeToggle<CR>
 let NERDTreeIgnore = ['\~$', '\.pyc$', '\.orig$']
 
 Bundle "scrooloose/nerdcommenter"
@@ -22,7 +22,7 @@ let g:miniBufExplMapCTabSwitchBufs=1
 let g:miniBufExplModSelTarget=1
 
 Bundle "Gundo"
-map <C-g> :GundoToggle<CR>
+map <leader>g :GundoToggle<CR>
 
 Bundle "rstacruz/sparkup", {"rtp": "vim/"}
 Bundle "altercation/vim-colors-solarized"
