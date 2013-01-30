@@ -1,5 +1,7 @@
 set nocompatible
+
 let mapleader = ","
+
 filetype off
 
 " Vundle configuration.
@@ -69,6 +71,6 @@ set expandtab
 set autoindent
 
 " Copy & Paste stuff.
-map <C-c> "+y<CR>
-map <C-v> "+p<CR>
-map <C-x> "+c<CR>
+map <leader>c "+y<CR>
+map <leader>v "+p<CR>
+map <leader>x "+c<CR>
