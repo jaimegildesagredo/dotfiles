@@ -43,6 +43,8 @@ Bundle 'tpope/vim-fugitive'
 
 Bundle 'kchmck/vim-coffee-script'
 
+Bundle 'kien/ctrlp.vim'
+
 " Syntax coloring and filetype detection.
 syntax on
 filetype plugin indent on
