@@ -7,7 +7,6 @@ color =
 purge =
 rebase =
 pager =
-purge =
 mq =
 
 [pager]
