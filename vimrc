@@ -35,6 +35,7 @@ let g:syntastic_enable_signs=0
 
 Bundle "Shougo/neocomplcache"
 let g:neocomplcache_enable_at_startup = 1
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 
 Bundle 'Lokaltog/vim-powerline'
 set laststatus=2
