@@ -16,3 +16,6 @@ WORKON_HOME=$HOME/.virtualenvs
 export WORKON_HOME
 
 source $HOME/.local/bin/virtualenvwrapper.sh
+
+# PATH
+export PATH=$HOME/bin:$PATH

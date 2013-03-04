@@ -1,6 +1,7 @@
 #!/bin/sh
 
 VIMDIR=$HOME/.vim
+BINDIR=$HOME/bin
 
 function install_symlink() {
     echo "Installing `basename $1` in $2..."
@@ -57,6 +58,16 @@ function install_virtualenvwrapper() {
     pip install --user virtualenvwrapper
 }
 
+function install_bindir() {
+    mkdir -pv $BINDIR
+}
+
+function install_vimcat() {
+    git clone git@github.com:rkitover/vimpager.git
+    cp vimpager/vimcat $BINDIR
+    chmod 755 $BINDIR/vimcat
+}
+
 function main() {
     update_repo
 
@@ -65,6 +76,8 @@ function main() {
     install_vim_ftplugins
     install_vim_vundle
     install_virtualenvwrapper
+    install_bindir
+    install_vimcat
 }
 
 main
