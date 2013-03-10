@@ -26,7 +26,7 @@ map <leader>g :GundoToggle<CR>
 
 Bundle "rstacruz/sparkup", {"rtp": "vim/"}
 Bundle "altercation/vim-colors-solarized"
-set background=dark
+set background=light
 colorscheme solarized
 
 Bundle 'scrooloose/syntastic'
