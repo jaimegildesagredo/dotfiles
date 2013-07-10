@@ -6,6 +6,7 @@ if [ -f /etc/bashrc ]; then
 fi
 
 # User specific aliases and functions
+alias ls="ls --color=auto"
 alias ll="ls -l"
 alias la="ls -a"
 alias vi="gvim"
