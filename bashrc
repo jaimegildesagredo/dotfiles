@@ -2,7 +2,11 @@
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
-	. /etc/bashrc
+    . /etc/bashrc
+fi
+
+if [ -f /etc/bash_completion ]; then
+    . /etc/bash_completion
 fi
 
 # User specific aliases and functions
