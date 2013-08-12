@@ -20,8 +20,6 @@ alias vcat="vimcat"
 # Virtualenv stuff.
 WORKON_HOME=$HOME/.virtualenvs
 export WORKON_HOME
-VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--distribute'
-export VIRTUALENVWRAPPER_VIRTUALENV_ARGS
 
 source $HOME/.local/bin/virtualenvwrapper.sh
 
