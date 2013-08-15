@@ -13,7 +13,6 @@ fi
 alias ls="ls --color=auto"
 alias ll="ls -l"
 alias la="ls -a"
-alias vi="gvim"
 alias gti="git"
 alias vcat="vimcat"
 
