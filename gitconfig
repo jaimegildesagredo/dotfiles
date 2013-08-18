@@ -5,6 +5,7 @@
     ci = commit
     st = status
     di = diff
+    dic = diff --cached
     lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 
 [core]
