@@ -23,4 +23,5 @@ export WORKON_HOME
 source $HOME/.local/bin/virtualenvwrapper.sh
 
 # PATH
-export PATH=$HOME/.local/bin:$HOME/bin:/usr/bin/vendor_perl:$PATH
+PATH=$HOME/.gem/ruby/1.9.1/bin:$HOME/.local/bin:$HOME/bin:/usr/bin/vendor_perl:$PATH
+export PATH
