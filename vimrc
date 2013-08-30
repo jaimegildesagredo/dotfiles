@@ -58,6 +58,7 @@ set cursorline
 set number
 set listchars=tab:▸\ ,eol:¬
 set list
+set mouse=a
 
 " Searching
 set hlsearch
