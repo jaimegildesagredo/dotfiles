@@ -9,6 +9,8 @@ if [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
 fi
 
+PS1='[\u@\h \W]\n\$ '
+
 # User specific aliases and functions
 alias ls="ls --color=auto"
 alias ll="ls -l"
