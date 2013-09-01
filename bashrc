@@ -31,3 +31,8 @@ source $HOME/.local/bin/virtualenvwrapper.sh
 # PATH
 PATH=$HOME/.gem/ruby/1.9.1/bin:$HOME/.local/bin:$HOME/bin:/usr/bin/vendor_perl:$PATH
 export PATH
+
+if [[ -f /usr/share/doc/pkgfile/command-not-found.bash ]]
+then
+    . /usr/share/doc/pkgfile/command-not-found.bash
+fi
