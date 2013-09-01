@@ -30,3 +30,8 @@ source $HOME/.local/bin/virtualenvwrapper.sh
 
 # PATH
 export PATH=$HOME/.local/bin:$HOME/bin:/usr/bin/vendor_perl:$PATH
+
+# History
+export HISTSIZE=10000
+export HISTCONTROL=erasedups
+shopt -s histappend
