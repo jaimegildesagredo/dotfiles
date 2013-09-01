@@ -32,6 +32,11 @@ source $HOME/.local/bin/virtualenvwrapper.sh
 PATH=$HOME/.gem/ruby/1.9.1/bin:$HOME/.local/bin:$HOME/bin:/usr/bin/vendor_perl:$PATH
 export PATH
 
+# History
+export HISTSIZE=10000
+export HISTCONTROL=erasedups
+shopt -s histappend
+
 # Archlinux command not found hook
 if [[ -f /usr/share/doc/pkgfile/command-not-found.bash ]]
 then
