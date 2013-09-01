@@ -9,7 +9,11 @@ if [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
 fi
 
+# Prompt
 PS1='[\u@\h \W]\n\$ '
+
+# Vim like command line
+set -o vi
 
 # User specific aliases and functions
 alias ls="ls --color=auto"
