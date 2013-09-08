@@ -22,6 +22,8 @@ alias la="ls -a"
 alias gti="git"
 alias vcat="vimcat"
 
+export EDITOR=vim
+
 # Virtualenv stuff.
 WORKON_HOME=$HOME/.virtualenvs
 export WORKON_HOME
