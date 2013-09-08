@@ -78,3 +78,9 @@ set autoindent
 map <leader>c "+y<CR>
 map <leader>v "+p<CR>
 map <leader>x "+c<CR>
+
+" urxvt mappings
+map Ob <C-Down>
+map Oa <C-Up>
+map Od <C-Left>
+map Oc <C-Right>
