@@ -63,6 +63,7 @@ function install_bindir() {
 }
 
 function install_vimcat() {
+    rm -rf vimpager
     git clone git@github.com:rkitover/vimpager.git
     cp vimpager/vimcat $BINDIR
     chmod 755 $BINDIR/vimcat
