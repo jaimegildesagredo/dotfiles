@@ -16,7 +16,7 @@ function install_directory() {
 }
 
 function install_dotfiles() {
-    dotfiles=(bashrc gitconfig gvimrc hgrc vimrc)
+    dotfiles=(bashrc gitconfig gvimrc hgrc vimrc gemrc)
     for dotfile in ${dotfiles[@]}; do
         install_symlink $PWD/$dotfile $HOME/.$dotfile
     done
