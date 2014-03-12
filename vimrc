@@ -46,6 +46,8 @@ Bundle 'kchmck/vim-coffee-script'
 
 Bundle 'kien/ctrlp.vim'
 
+Bundle 'chase/vim-ansible-yaml'
+
 " Syntax coloring and filetype detection.
 syntax on
 filetype plugin indent on
