@@ -22,6 +22,12 @@ alias la="ls -a"
 alias gti="git"
 alias vcat="vimcat"
 
+# Vagrant aliases
+alias vssh="vagrant ssh"
+alias vup="vagrant up"
+alias vdes="vagrant destroy -f"
+alias vreb="vagrant destroy -f && vagrant up"
+
 # Virtualenv stuff.
 WORKON_HOME=$HOME/.virtualenvs
 export WORKON_HOME
