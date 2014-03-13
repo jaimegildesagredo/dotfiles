@@ -27,6 +27,9 @@ alias vssh="vagrant ssh"
 alias vup="vagrant up"
 alias vdes="vagrant destroy -f"
 alias vreb="vagrant destroy -f && vagrant up"
+alias vst="vagrant status"
+alias vha="vagrant halt"
+
 
 # Virtualenv stuff.
 WORKON_HOME=$HOME/.virtualenvs
