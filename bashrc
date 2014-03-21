@@ -19,7 +19,6 @@ set -o vi
 alias ls="ls --color=auto"
 alias ll="ls -l"
 alias la="ls -a"
-alias gti="git"
 alias vcat="vimcat"
 
 # Vagrant aliases
@@ -31,6 +30,13 @@ alias vst="vagrant status"
 alias vha="vagrant halt"
 alias vre="vagrant reload"
 
+# Git aliases
+alias gti="git"
+alias gst="git status"
+alias gci="git commit"
+alias gdi="git diff"
+alias gus="git push"
+alias gul="git pull"
 
 # Virtualenv stuff.
 WORKON_HOME=$HOME/.virtualenvs
