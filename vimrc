@@ -71,7 +71,7 @@ set smarttab
 set expandtab
 set autoindent
 
-" Copy & Paste stuff.
+" Gvim copy & paste stuff
 map <leader>c "+y<CR>
 map <leader>v "+p<CR>
 map <leader>x "+c<CR>
