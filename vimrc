@@ -14,7 +14,6 @@ map <leader>n :NERDTreeToggle<CR>
 let NERDTreeIgnore = ['\~$', '\.pyc$', '\.orig$']
 
 Bundle "scrooloose/nerdcommenter"
-
 Bundle "minibufexpl.vim"
 let g:miniBufExplMapWindowNavVim=1
 let g:miniBufExplMapWindowNavArrows=1
@@ -41,11 +40,8 @@ Bundle 'Lokaltog/vim-powerline'
 set laststatus=2
 
 Bundle 'tpope/vim-fugitive'
-
 Bundle 'kchmck/vim-coffee-script'
-
 Bundle 'kien/ctrlp.vim'
-
 Bundle 'chase/vim-ansible-yaml'
 
 " Syntax coloring and filetype detection.
