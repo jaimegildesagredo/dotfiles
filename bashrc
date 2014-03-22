@@ -19,8 +19,24 @@ set -o vi
 alias ls="ls --color=auto"
 alias ll="ls -l"
 alias la="ls -a"
-alias gti="git"
 alias vcat="vimcat"
+
+# Vagrant aliases
+alias vssh="vagrant ssh"
+alias vup="vagrant up"
+alias vde="vagrant destroy -f"
+alias vreb="vagrant destroy -f && vagrant up"
+alias vst="vagrant status"
+alias vha="vagrant halt"
+alias vre="vagrant reload"
+
+# Git aliases
+alias gti="git"
+alias gst="git status"
+alias gci="git commit"
+alias gdi="git diff"
+alias gus="git push"
+alias gul="git pull"
 
 export EDITOR=vim
 

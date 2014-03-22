@@ -14,7 +14,6 @@ map <leader>n :NERDTreeToggle<CR>
 let NERDTreeIgnore = ['\~$', '\.pyc$', '\.orig$']
 
 Bundle "scrooloose/nerdcommenter"
-
 Bundle "minibufexpl.vim"
 let g:miniBufExplMapWindowNavVim=1
 let g:miniBufExplMapWindowNavArrows=1
@@ -41,10 +40,9 @@ Bundle 'Lokaltog/vim-powerline'
 set laststatus=2
 
 Bundle 'tpope/vim-fugitive'
-
 Bundle 'kchmck/vim-coffee-script'
-
 Bundle 'kien/ctrlp.vim'
+Bundle 'chase/vim-ansible-yaml'
 
 " Syntax coloring and filetype detection.
 syntax on
@@ -74,10 +72,25 @@ set smarttab
 set expandtab
 set autoindent
 
-" Copy & Paste stuff.
+" Gvim copy & paste stuff
 map <leader>c "+y<CR>
 map <leader>v "+p<CR>
 map <leader>x "+c<CR>
+
+" http://vimcasts.org/episodes/tidying-whitespace
+function! Preserve(command)
+    " Preparation: save last search, and cursor position.
+    let _s=@/
+    let l = line(".")
+    let c = col(".")
+    " Do the business:
+    execute a:command
+    " Clean up: restore previous search history, and cursor position
+    let @/=_s
+    call cursor(l, c)
+endfunction
+
+autocmd BufWritePre * :call Preserve("%s/\\s\\+$//e")
 
 " urxvt mappings
 map Ob <C-Down>
