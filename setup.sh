@@ -55,7 +55,7 @@ function update_repo() {
 }
 
 function install_virtualenvwrapper() {
-    pip install --user virtualenvwrapper
+    pip install --user --upgrade virtualenvwrapper
 }
 
 function install_bindir() {
