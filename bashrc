@@ -44,7 +44,7 @@ export EDITOR=vim
 WORKON_HOME=$HOME/.virtualenvs
 export WORKON_HOME
 
-source $HOME/.local/bin/virtualenvwrapper.sh
+source /usr/bin/virtualenvwrapper.sh
 
 # PATH
 PATH=$HOME/.gem/ruby/1.9.1/bin:$HOME/.local/bin:$HOME/bin:/usr/bin/vendor_perl:$PATH
