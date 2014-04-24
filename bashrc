@@ -29,6 +29,8 @@ alias vreb="vagrant destroy -f && vagrant up"
 alias vst="vagrant status"
 alias vha="vagrant halt"
 alias vre="vagrant reload"
+alias vpr="vagrant provision"
+alias vpro="vagrant provision"
 
 # Git aliases
 alias gti="git"
