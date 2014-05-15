@@ -27,12 +27,15 @@ function install_vimdir() {
 }
 
 function install_vim_ftplugins() {
-    ftplugin_dir=$VIMDIR/ftplugin
-    install_directory $ftplugin_dir
+    local src_dir=$PWD/vim/ftplugin
+    local dest_dir=$VIMDIR/ftplugin
+    local ftplugins=(`ls $src_dir`)
 
-    ftplugins=(css.vim html.vim javascript.vim python.vim ruby.vim)
-    for ftplugin in ${ftplugins[@]}; do
-        install_symlink $PWD/vim/ftplugin/$ftplugin $ftplugin_dir/$ftplugin
+    install_directory $dest_dir
+
+    for ftplugin in ${ftplugins[@]};
+    do
+        install_symlink $src_dir/$ftplugin $dest_dir/$ftplugin
     done
 }
 
