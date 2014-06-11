@@ -40,6 +40,11 @@ alias gdi="git diff"
 alias P="git push"
 alias p="git pull --rebase"
 
+# Alea aliases
+alias f='cd ~/projects/alea/felix; workon felix; source dev/bin/env_develop'
+alias fd='f; cd systems/operations/provision'
+alias fr='cd ~/projects/alea/felix/dev/devvm; vagrant up;'
+
 # Virtualenv stuff.
 WORKON_HOME=$HOME/.virtualenvs
 export WORKON_HOME
