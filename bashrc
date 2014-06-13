@@ -37,8 +37,8 @@ alias gti="git"
 alias gst="git status"
 alias gci="git commit"
 alias gdi="git diff"
-alias gus="git push"
-alias gul="git pull"
+alias P="git push"
+alias p="git pull --rebase"
 
 export EDITOR=vim
 
