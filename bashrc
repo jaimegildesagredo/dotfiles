@@ -49,7 +49,7 @@ alias fr='cd ~/projects/alea/felix/dev/devvm; vagrant up;'
 WORKON_HOME=$HOME/.virtualenvs
 export WORKON_HOME
 
-source $HOME/.local/bin/virtualenvwrapper.sh
+source `which virtualenvwrapper.sh`
 
 # PATH
 PATH=$HOME/.gem/ruby/1.9.1/bin:$HOME/.local/bin:$HOME/bin:/usr/bin/vendor_perl:$PATH
