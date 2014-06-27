@@ -9,6 +9,10 @@ if [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
 fi
 
+# PATH
+PATH=$HOME/.gem/ruby/1.9.1/bin:$HOME/.local/bin:$HOME/bin:/usr/bin/vendor_perl:$PATH
+export PATH
+
 # Prompt
 PS1='[\u@\h \W]\n\$ '
 
@@ -45,10 +49,6 @@ WORKON_HOME=$HOME/.virtualenvs
 export WORKON_HOME
 
 source `which virtualenvwrapper.sh`
-
-# PATH
-PATH=$HOME/.gem/ruby/1.9.1/bin:$HOME/.local/bin:$HOME/bin:/usr/bin/vendor_perl:$PATH
-export PATH
 
 # History
 export HISTSIZE=10000
