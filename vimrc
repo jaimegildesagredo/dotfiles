@@ -90,3 +90,5 @@ function! Preserve(command)
 endfunction
 
 autocmd BufWritePre * :call Preserve("%s/\\s\\+$//e")
+
+set mouse=a
