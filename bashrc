@@ -10,7 +10,8 @@ if [ -f /etc/bash_completion ]; then
 fi
 
 # PATH
-PATH=$HOME/.gem/ruby/1.9.1/bin:$HOME/.local/bin:$HOME/bin:/usr/bin/vendor_perl:$PATH
+PATH=$HOME/.gem/ruby/2.1.0/bin:$HOME/.gem/ruby/1.9.1/bin:$HOME/.local/bin:$HOME/bin:/usr/bin/vendor_perl:$PATH
+
 export PATH
 
 # Prompt
