@@ -43,6 +43,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'kien/ctrlp.vim'
 Bundle 'chase/vim-ansible-yaml'
+Bundle 'fatih/vim-go'
 
 " Syntax coloring and filetype detection.
 syntax on
