@@ -50,7 +50,7 @@ function install_vim_vundle() {
         popd
     fi
 
-    vim -c "BundleInstall!" -c ":qa!"
+    vim -e -c "BundleInstall!" -c ":qa!"
 }
 
 function update_repo() {
