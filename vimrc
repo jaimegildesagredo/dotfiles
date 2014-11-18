@@ -44,6 +44,9 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'kien/ctrlp.vim'
 Bundle 'chase/vim-ansible-yaml'
 
+Bundle 'fatih/vim-go'
+let g:go_fmt_command = "goimports"
+
 " Syntax coloring and filetype detection.
 syntax on
 filetype plugin indent on
