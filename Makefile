@@ -1,2 +1,3 @@
 setup:
-	ln -rsv ./vimrc ~/.vimrc
+	ln -rsf ./vimrc ~/.vimrc
+	ln -rsf ./bashrc ~/.bashrc
