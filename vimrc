@@ -11,6 +11,7 @@ call vundle#rc()
 Bundle "gmarik/vundle"
 Bundle "The-NERD-tree"
 map <leader>n :NERDTreeToggle<CR>
+map <C-x> :NERDTreeToggle<CR>
 let NERDTreeIgnore = ['\~$', '\.pyc$', '\.orig$']
 
 Bundle "scrooloose/nerdcommenter"
