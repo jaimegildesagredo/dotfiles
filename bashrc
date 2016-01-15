@@ -14,7 +14,7 @@ GOPATH=$HOME/go
 export GOPATH
 
 # PATH
-PATH=$HOME/.gem/ruby/2.1.0/bin:$HOME/.gem/ruby/1.9.1/bin:$HOME/.local/bin:$HOME/bin:/usr/bin/vendor_perl:$GOPATH/bin:$PATH
+PATH=$HOME/.gem/ruby/2.1.0/bin:$HOME/.gem/ruby/1.9.1/bin:$HOME/.local/bin:$HOME/bin:/usr/bin/vendor_perl:$GOPATH/bin:/usr/local/go/bin:$PATH
 
 export PATH
 
