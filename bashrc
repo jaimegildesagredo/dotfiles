@@ -18,7 +18,7 @@ HISTSIZE=100000
 HISTCONTROL=erasedups
 shopt -s histappend
 
-PATH=~/.local/bin:$PATH
+export EDITOR=vim
 
 WORKON_HOME=~/.virtualenvs
 
