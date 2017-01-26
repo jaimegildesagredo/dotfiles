@@ -19,7 +19,7 @@ filetype plugin indent on
 let mapleader = ","
 
 colorscheme solarized
-set background=dark
+set background=light
 
 set encoding=utf-8
 set title
