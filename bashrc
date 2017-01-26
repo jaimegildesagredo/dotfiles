@@ -14,7 +14,7 @@ alias p="git pull --rebase"
 
 PS1='[\u@\h \W]\$ '
 
-HISTSIZE=10000
+HISTSIZE=100000
 HISTCONTROL=erasedups
 shopt -s histappend
 
