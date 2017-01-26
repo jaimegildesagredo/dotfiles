@@ -20,6 +20,8 @@ shopt -s histappend
 
 export EDITOR=vim
 
+export GOPATH=~/go
+
 WORKON_HOME=~/.virtualenvs
 
 virtualenvwrapper=`which virtualenvwrapper.sh`
