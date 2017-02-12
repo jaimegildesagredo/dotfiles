@@ -22,6 +22,10 @@ export EDITOR=vim
 
 export GOPATH=~/go
 
+export ANDROID_HOME=~/Android/Sdk
+
+export PATH=~/.local/bin:~/.gem/ruby/2.4.0/bin:$GOPATH/bin:~/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:~/node_modules/.bin:~/google-cloud-sdk/bin:~/dockers/bin:$PATH
+
 WORKON_HOME=~/.virtualenvs
 
 virtualenvwrapper=`which virtualenvwrapper.sh`
