@@ -6,12 +6,12 @@ setup_zsh:
 	ln -sf $(PWD)/zshrc ~/.zshrc
 
 setup_bash:
-	ln -rsf ./bashrc ~/.bashrc
+	ln -sf $(PWD)/bashrc ~/.bashrc
 
 setup_git:
-	ln -rsf ./gitconfig ~/.gitconfig
+	ln -sf $(PWD)/gitconfig ~/.gitconfig
 
 setup_vim:
-	ln -rsf ./vimrc ~/.vimrc
-	mkdir -p ~/.vim
-	ln -rsf ./vim/ftplugin ~/.vim/ftplugin
+	ln -sf $(PWD)/vimrc ~/.vimrc
+	mkdir -p $(PWD)/.vim
+	ln -sf $(PWD)/vim/ftplugin ~/.vim/ftplugin
