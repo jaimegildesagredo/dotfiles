@@ -26,3 +26,8 @@ alias p="git pull --rebase"
 # Autocomplete
 
 autoload -Uz compinit && compinit -i
+
+# Golang
+
+export GOPATH=~/go
+export PATH=$GOPATH/bin:$PATH
