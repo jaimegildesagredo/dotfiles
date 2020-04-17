@@ -22,3 +22,7 @@ alias gti="git"
 alias gst="git status"
 alias P="git push"
 alias p="git pull --rebase"
+
+# Autocomplete
+
+autoload -Uz compinit && compinit
