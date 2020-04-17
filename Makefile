@@ -18,7 +18,7 @@ setup_vim: setup_vim_dotfiles setup_vim_plugins
 setup_vim_dotfiles:
 	ln -sf $(PWD)/vimrc ~/.vimrc
 	mkdir -p $(VIM_DIR)
-	ln -sf $(PWD)/vim/ftplugin $(VIM_DIR)/ftplugin
+	ln -sf $(PWD)/vim/ftplugin $(VIM_DIR)
 
 setup_vim_plugins: $(VIM_VUNDLE_DIR)
 	vim -c 'BundleInstall!' -c ':qa!'
