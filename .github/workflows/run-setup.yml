@@ -18,4 +18,4 @@ jobs:
         make setup_bash
         make setup_zsh
         make setup_git
-        make setup_vim
+        make setup_vim_dotfiles
