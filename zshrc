@@ -25,4 +25,4 @@ alias p="git pull --rebase"
 
 # Autocomplete
 
-autoload -Uz compinit && compinit
+autoload -Uz compinit && compinit -i
