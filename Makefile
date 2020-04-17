@@ -21,7 +21,7 @@ setup_vim_dotfiles:
 	ln -sf $(PWD)/vim/ftplugin $(VIM_DIR)
 
 setup_vim_plugins: $(VIM_VUNDLE_DIR)
-	vim -c 'BundleInstall!' -c ':qa!'
+	vim +PluginClean +PluginInstall +qall
 
 $(VIM_VUNDLE_DIR):
 	git clone https://github.com/gmarik/vundle.git $(VIM_VUNDLE_DIR)
