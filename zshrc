@@ -31,3 +31,7 @@ autoload -Uz compinit && compinit -i
 
 export GOPATH=~/go
 export PATH=$GOPATH/bin:$PATH
+
+# Ruby
+
+export PATH=~/.gem/ruby/2.6.0/bin:$PATH
